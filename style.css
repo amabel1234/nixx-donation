@@ -665,3 +665,17 @@ body::before {
   50% { background-position: 30% 30%, 70% 70%, 45% 55%; }
   100%{ background-position: 15% 25%, 85% 75%, 55% 45%; }
 }
+
+  /* Real QRIS image */
+  .qris-real-img {
+    width: 180px; height: 180px; border-radius: 1rem;
+    object-fit: cover; display: block;
+    border: 2px solid rgba(255,255,255,0.15);
+    box-shadow: 0 0 20px rgba(168,85,247,0.3);
+    transition: box-shadow 0.3s ease;
+  }
+  .qris-card:hover .qris-real-img {
+    box-shadow: 0 0 30px rgba(168,85,247,0.6), 0 0 60px rgba(168,85,247,0.2);
+  }
+  .qris-info strong { font-size: 1rem; letter-spacing: 0.05em; }
+  
